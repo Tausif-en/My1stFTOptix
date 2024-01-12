@@ -1,0 +1,98 @@
+Name: DataLogger
+Id: g=2a3eacf74ebc8035c790c11a98443918
+Type: FolderType
+Children:
+- Name: MotorStatus
+  Id: g=6cf10dc43639555dc90212642c26f91a
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Speed01
+  Id: g=62f653629829ea3497f5b7e40d09f0e2
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=dc5702a159faf33949c9f6eae57892f3
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=72bda8a56a693883859926c733327758
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=b734717a4b37eac869f8365f1bb2f5de
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+- Name: Speed02
+  Id: g=d6c0633d610578fde6b33f863eb08d6d
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=045fcf3a2b029899bcbd9b5696c1b0c9
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=c9856bced792ce1b497e977a0f451875
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=dcc4125a682d8f44afee11b10528e7de
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+- Name: Speed03
+  Id: g=5848eb0d216e0c383249aaeba5561fb0
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=9336e9813c307199c57440b89e6c46e5
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=324727bf97fd74a3df4bf659345ca8ce
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=0cbdbdfd4ddac53c427afb147cd9b53e
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+- Name: MotorSetSpeed
+  Id: g=501878ce53d03ebdd56f2ca8a6508b5e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Mode
+  Id: g=eca2ba1c9ac9959d95ef2f45db3a17f8
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: To
+  Id: g=4c5edc1b7fc344a5fbc0a9cd0cff68bf
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-01-10T23:00:00.0000000"
+- Name: From
+  Id: g=e85dc698b0c59f7e01266da110a757e1
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-01-09T00:00:00.0000000"

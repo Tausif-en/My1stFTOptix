@@ -1,0 +1,125 @@
+Name: Model
+Id: g=13e5ca322e6d0fe22438e2c34e5b2acd
+Type: ModelCategoryFolder
+Children:
+- Name: Variable1
+  Id: g=e8747bc6db72ee8973f798916db6b52e
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Id: g=13e770d09f5d08b44c247f43362d6f46
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=7c606ec615f9593c20afc1f8f81969bc
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: MotorInstance1
+  Id: g=449047f9b85be14735e506b69c6e9d40
+  Type: Motor
+  Children:
+  - Name: Start
+    Id: g=e54cb383084f0ba0547b76323c02f6d2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Stop
+    Id: g=4b8ff141b005df5757592f802c80a204
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Id: g=7e655653559d2db781c8f3a722afdea0
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Name
+    Id: g=481c52dacb4163e93992e631edd1c1be
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor-01"
+- Name: Motor
+  Id: g=f04166eeadf6265b6047bf5fedab3c6f
+  Supertype: BaseObjectType
+  Children:
+  - Name: Start
+    Id: g=c0bd3588f9fb1a55b9e8faa3d6e46aeb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Stop
+    Id: g=1f13e5a0fc2c0ef765940c04831bd9da
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Id: g=1738cb5b2b292fb58c9dc0744ed64562
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Name
+    Id: g=c40897dcc0ca21353bdad9ede03613bf
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: MotorInstance2
+  Id: g=dfcbc9cc0cda29e5b4a12f07aed0ef72
+  Type: Motor
+  Children:
+  - Name: Start
+    Id: g=fc0206497d02d911b814b397eee9ccf6
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Stop
+    Id: g=11fc4727e9b07992f496d3e4febb3851
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Id: g=c45904f8d339094ac51863377c1d1e45
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Name
+    Id: g=15548c624208d30aa7a9ecce8fd8fff6
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor-02"
+- Name: MotorInstance3
+  Id: g=81d295d8dc9987bc97c60c266f28ae66
+  Type: Motor
+  Children:
+  - Name: Start
+    Id: g=09cd6cfe152624c5d6c42fc5fff43000
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Stop
+    Id: g=36b8533ef7746cd3330193097994de40
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Speed
+    Id: g=cf6a66d951865a4159e95dcabfa14241
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Name
+    Id: g=9f5d04b4c25adb243e9b6332ccb40759
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor-03"
+- File: DataLogger/DataLogger.yaml
+- File: EventLogger/EventLogger.yaml
+- Name: To
+  Id: g=ba9e60c019a4c00759801fa1104dd310
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- File: Alarms/Alarms.yaml
+- File: Recipe/Recipe.yaml
+- File: eCharts/eCharts.yaml

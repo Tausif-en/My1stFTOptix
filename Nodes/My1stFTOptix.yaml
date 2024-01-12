@@ -1,0 +1,78 @@
+Name: My1stFTOptix
+Id: g=402ff2b69590df68ce1d1e27bed17a55
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Id: g=12b0437304d61022fa2cc44947460831
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=3ba83c3e41dc9f1198c66de7a77393f3
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Id: g=d6e043086d2fe9b84c45b3080830f66f
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: Authentication
+  Id: g=1de734f980b2bf3f4d5879dbd37c777d
+  Type: PropertyGroup
+- Name: PasswordPolicy
+  Id: g=4f936e886d4b5284f5670faf9c4d3e0b
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=cc76bc1bc9e5f2d3bbe954005b60dcb2
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=a99f479bc306db64ce21f36fd3a0783d
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=130955a72202373374734d9fe4cd6fec
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=3bc6e561ec76a4bab29f839ed9426485
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Id: g=bc1f718e282d35230532d9c8499c98f0
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: RecipeSchema1
+  Id: g=e306e6d5e8fa5c0af69b4dc855981cb8
+  Type: Alias
+  DataType: NodeId
+  Value: "/Objects/My1stFTOptix/Recipes/RecipeSchema1/EditModel"
+  Children:
+  - Name: Kind
+    Id: g=b50601e8215b7eeaf89773b42a911697
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"a65780b54e5fcc426d2c2afc6b61acc8","Namespace":7}

@@ -1,0 +1,114 @@
+Name: Recipes
+Id: g=02476b862d0b39bccb977237face10c9
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema1
+  Id: g=87f448fdfce4556b442d8828e3b7f7f6
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Id: g=92ac3b743424beebb7c651cf548475da
+    Type: BaseObjectType
+    Children:
+    - Name: RecipeString
+      Id: g=2a26cbea36b6c0a24013b90a959f9aa0
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Variable1
+      Id: g=30df79da7365944922b9df21217751f1
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Variable2
+      Id: g=aa9d227cc166f8cbf07438069c070dfc
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Variable3
+      Id: g=a0bc3dbdcc1da72082f329251701c83c
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+  - Class: Reference
+    Target: ns=23;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=23;i=60
+    Direction: Forward
+  - Name: Store
+    Id: g=11a7c7c59e893193edceb00553b25ee3
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/My1stFTOptix/DataStores/EmbeddedDatabase"
+    Children:
+    - Name: Kind
+      Id: g=8b688986237637af617916ab55ef6493
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TargetNode
+    Id: g=29262d56a80b3257f675590c95e3c3b7
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/My1stFTOptix/Model/Recipe"
+    Children:
+    - Name: Kind
+      Id: g=9f289b62a98948587250f3979d9eb6ca
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: EditModel
+    Id: g=df665ed49504e71833007f33c51eaa21
+    Type: BaseObjectType
+    Children:
+    - Name: RecipeString
+      Id: g=412c2cb025e1a670f1078b4f75a34a3f
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Variable1
+      Id: g=d6b4e3fd8721e6ae091f7b164d070f0e
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Variable2
+      Id: g=eced5b0fe6336fd18d63391955eb52c7
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Variable3
+      Id: g=0ad069c06b17cfb33e5e485e17af6407
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0

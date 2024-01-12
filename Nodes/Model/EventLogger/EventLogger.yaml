@@ -1,0 +1,32 @@
+Name: EventLogger
+Id: g=524d0a903f35144dd15b65b8cac6e559
+Type: FolderType
+Children:
+- Name: AnalogVariable1
+  Id: g=d35c9ccf26cef5830fadf5e712d6af2d
+  Type: AnalogItemType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: EURange
+    Id: g=c86f93229fa88d3749b0607a60263048
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=90d69a19305309a5105816c7347c65ae
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Id: g=441fb41b107dcccd3b2b689ba02cc91a
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+- Name: Variable2
+  Id: g=5334816d8d02e66f33d7b06741790100
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

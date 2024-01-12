@@ -1,0 +1,430 @@
+Name: Loggers
+Id: g=6cb7adf533494a744d09e8ea4a7609a1
+Type: LoggersCategoryFolder
+Children:
+- Name: DataLogger1
+  Id: g=e4ec0f4c9b473f40f4c0677c2ddcfec4
+  Type: ns=8;DataLogger
+  Children:
+  - Name: SamplingMode
+    Id: g=21b57ee805314978be29fb872dc7367d
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+    Children:
+    - Name: KeyValueConverter1
+      Id: g=86f838278021002b98bc026efc46b4f7
+      Type: ValueMapConverter
+      Children:
+      - Name: Source
+        Id: g=ac83ac597a5f90ce5ffc94772b8073fb
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=51ef2dec1cedcf74d56cd827f1f76e60
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/DataLogger/Mode"
+      - Name: Pairs
+        Id: g=b3ca8c27f9c359e7b9c96413ed1cf1da
+        Type: BaseObjectType
+        Children:
+        - Name: Pair
+          Id: g=4adface7c66b829ca24a225a3d8fe1ad
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Id: g=0560a2828dd51e1a82d0d8b073a2f9ea
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+          - Name: Value
+            Id: g=14839ae47ea29f95b9775741270e6681
+            Type: BaseDataVariableType
+            DataType: SamplingModeEnum
+            Value: 1
+        - Name: Pair1
+          Id: g=afb01cf5524ecfbd34b7cc04a9e0bf67
+          Type: ValueMapPair
+          Children:
+          - Name: Key
+            Id: g=44a47d6746ad672978f4ec3831866fc1
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Value
+            Id: g=222084e735b60b2b2f20e98ff3e55b1f
+            Type: BaseDataVariableType
+            DataType: SamplingModeEnum
+            Value: 2
+  - Name: Store
+    Id: g=cf47288ab6a2c15632ec73f05a243c54
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/My1stFTOptix/DataStores/EmbeddedDatabase"
+    Children:
+    - Name: Kind
+      Id: g=4f2b247f55967d1b91097ec599a590dd
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: VariablesToLog
+    Id: g=a6af0c37292038fe59361906dfb3af0e
+    Type: BaseObjectType
+    Children:
+    - Name: MotorStatus
+      Id: g=66f7b6bb5dc930cd8f1e9e9e399df736
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=96bb14ba905be0f70e6309d2e0cff9c1
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=1bf74f1b5b0d3a289aad545f1e2074d7
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=bfc668a6cbbfdb72f1742025b915a3b2
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=a749a5626df2a2b1a1b63a5f4f608acc
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/DataLogger/MotorStatus"
+        Children:
+        - Name: Mode
+          Id: g=8b8e37befd3df9c9b6aa557569c5c8e8
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Speed01
+      Id: g=0f5648a6d25e855c7f52936b27dffbef
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=924375fa1f6cb1db43cb03a2b9701d97
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=ac8b9897016083ea0a74de58ff4411e4
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=5ac5d5763394d0e4eaaaee55fafc29d3
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=97759b63e8c4785c54b4e842413cc460
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/DataLogger/Speed01"
+        Children:
+        - Name: Mode
+          Id: g=88d8fc9fdd46c46a79573094f8bf696c
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Speed02
+      Id: g=e0d404945f6c7dad95f8ad7bc8522b2e
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=28da68a2d85d2e93b04e6911e40671bd
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=2e3fa9737a82a4a8555c8bc424932fbc
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=971443cad5caeb1dfd03f5be2666a2cc
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=d3b78328892613d412a731014295fd66
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/DataLogger/Speed02"
+        Children:
+        - Name: Mode
+          Id: g=e1a4c570be1e705a2967ccfcfbe9e5d4
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Speed03
+      Id: g=e8eebd06d5a55dbfeb8a58a5f9f792ec
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=2a00a418e0f121c1fb12d7f79763fe90
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=97cb7295c2b130cdc16c87e7194e0752
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=45ba781753222e3670de361fe8decbe8
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=97b6b9e5e10256572523c80fd9510456
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/DataLogger/Speed03"
+        Children:
+        - Name: Mode
+          Id: g=7e2b33557cae411589297828510a86ba
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: MotorSetSpeed
+      Id: g=5a3438e5abdb217bacde0a05256ebcd0
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=82e9019d907f17b624f46f7760b98e65
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=51999cbdbe309c8fb6a454680fa9e838
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=7eabf5d2f111c04191f7e84125390c89
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=27012c3c792a8409befdc880be9c0817
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/DataLogger/MotorSetSpeed"
+        Children:
+        - Name: Mode
+          Id: g=ac12e81ce7d15c7d00973aa46fb02674
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=8;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Id: g=9de498ea7c3fcc8a94f4c36be1316ddf
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: SamplingPeriod
+    Id: g=28b37f5f1a93a9be4f95b98ce0cefced
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:5.0000000"
+- Name: EventLogger1
+  Id: g=0174c88e0f37bbf920ae427dcd707103
+  Type: ns=21;EventLogger
+  Children:
+  - Name: Enabled
+    Id: g=6cecdcad6011dbfe9267af34d0d70481
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: Store
+    Id: g=6d9177918839d46c8b3f4bb7579d7f16
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/My1stFTOptix/DataStores/EmbeddedDatabase"
+    Children:
+    - Name: Kind
+      Id: g=d8b5915f374700491c562987756d18e4
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: EventConfigurations
+    Id: g=fd1b8f94b0266e0073ab68a0a07ff093
+    Type: BaseObjectType
+    Children:
+    - Name: EventConfiguration1
+      Id: g=1777ec31ada3c4cb90df2a988c8a47d5
+      Type: EventConfiguration
+      Children:
+      - Name: EventType
+        Id: g=29c66d3ec337ef3534589c91e4a4cae2
+        Type: NodePointer
+        DataType: NodeId
+        ReferenceType: HasProperty
+        Value: "/Types/EventTypes/BaseEventType/AuditEventType/AuditUpdateEventType"
+        Children:
+        - Name: Kind
+          Id: g=daaf7f9c9ff228727f24a75097e83624
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType"
+      - Name: EventSource
+        Id: g=ef0dca2a429583ad72bc6771f93a36b3
+        Type: NodePointer
+        DataType: NodeId
+        ReferenceType: HasProperty
+        Value: "/Objects/My1stFTOptix/Model/EventLogger"
+        Children:
+        - Name: Kind
+          Id: g=7e421f14e2458a8bec41a73865746942
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+  - Name: EventFieldPaths
+    Id: g=8319bcaac92f05092ee1688471bec9d2
+    Type: BaseObjectType
+    Children:
+    - Name: SourceNode
+      Id: g=2acbf6cfac93ac736e14b005e72752b5
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:SourceNode"
+    - Name: Time
+      Id: g=76c4f97c007fbcd93364a798624f2f7b
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:Time"
+    - Name: ClientUserId
+      Id: g=1645908bb2ead5f94b8759965bcd9361
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:ClientUserId"
+    - Name: NewValue
+      Id: g=8b2e1190ff26db7e1553c46dd8030cce
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:NewValue"
+    - Name: OldValue
+      Id: g=2b05b1d2295343a2ab252f012a156c0a
+      Type: EventFieldPath
+      DataType: NodePath
+      Value: "/0:OldValue"
+  - Name: EventArguments
+    Id: g=74b53c4bf5fb2bfc5e814face689b5d5
+    Type: BaseObjectType
+    Children:
+    - Name: EventTypeId
+      Id: g=b0d2640c0a73ae4c0a755f3cb4f5c494
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: SourceNode
+      Id: g=d52b07ab17eff6ecedd291c586138b6d
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Time
+      Id: g=cbddd5abd83588b1bddc8748f0297d18
+      Type: BaseDataVariableType
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+    - Name: ClientUserId
+      Id: g=5ae6f3cb15f66d603da877d2590f3ac8
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: NewValue
+      Id: g=a6ad66dae159d0d7686b8c562815ce36
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: Any
+    - Name: OldValue
+      Id: g=538978adeaee65e9d0cfbd3aff3c6395
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ValueRank: Any
+  - Name: EventFieldsToLog
+    Id: g=130e29ac6f848de8634abdacab407a85
+    Type: BaseObjectType
+    Children:
+    - Name: SourceNode
+      Id: g=d537ab3d47702715b24fb244501573a3
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Id: g=95bf1e528fc5b35b9a7e4cc5a15be84b
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/SourceNode@BrowseName"
+    - Name: Time
+      Id: g=8b7aab8c23197c67e8966d07189996de
+      Type: EventFieldToLog
+      DataType: UtcTime
+      Value: "1601-01-01T00:00:00.0000000"
+      Children:
+      - Name: DynamicLink
+        Id: g=04d90af312859037d6dd62d50f584900
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/Time"
+    - Name: ClientUserId
+      Id: g=d266e9f2bfe689b36946680a4a903bb8
+      Type: EventFieldToLog
+      DataType: String
+      Value: ""
+      Children:
+      - Name: DynamicLink
+        Id: g=ee936b7ffa8571f5e22898018a56d49b
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/ClientUserId"
+    - Name: NewValue
+      Id: g=f514e85955378d0e1cfa0ada4c97a173
+      Type: EventFieldToLog
+      DataType: Float
+      ValueRank: Any
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=aae3b3764de9ff999e4e31169116f2a6
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/NewValue"
+    - Name: OldValue
+      Id: g=9c2e4cba1a76164030d468c157aa3386
+      Type: EventFieldToLog
+      DataType: Float
+      ValueRank: Any
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=0410ffffca1b05c62a75c647dbaef682
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EventArguments/OldValue"

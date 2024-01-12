@@ -10865,7 +10865,7 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
-- Name: Screen1
+- Name: MQTT_Data
   Id: g=13c49f4bf9c18cedbf75272b937669b6
   Supertype: Screen
   ReferenceType: HasComponent
@@ -10963,3 +10963,43 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 210.0
+  - Name: TextBox1
+    Id: g=7ccca2a1097aee4a3dd90afe504b0eaa
+    Type: TextBox
+    Children:
+    - Name: Text
+      Id: g=b99e4367f1d44385061aa74a04f26741
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Id: g=ac7b86b1a62912cd6ddc18b0ce7b695e
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/My1stFTOptix/Model/Test_SaaS"
+        Children:
+        - Name: Mode
+          Id: g=8d12baab0651a07f3964a80f32e68fe2
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Id: g=047fea5f1edf950a97b222afa80103cf
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 110.0
+    - Name: TopMargin
+      Id: g=cf04c88e56e34433f9bae71e900ea53f
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 380.0
+    - Name: LeftMargin
+      Id: g=35a3e321a63f052519ee8a419972c7b5
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0

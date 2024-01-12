@@ -123,3 +123,8 @@ Children:
 - File: Alarms/Alarms.yaml
 - File: Recipe/Recipe.yaml
 - File: eCharts/eCharts.yaml
+- Name: Test_SaaS
+  Id: g=2d9028a8a57533b6696caa763666d654
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
